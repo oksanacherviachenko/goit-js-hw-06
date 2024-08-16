@@ -12,8 +12,10 @@ class StringBuilder {
     }
 
     padStart(str) {
-        this.#value += str + this.#value;
+        this.#value = str + this.#value;
     }
+
+  
 
     padBoth(str) {
         this.padStart(str);
